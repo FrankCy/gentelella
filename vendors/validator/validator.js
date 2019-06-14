@@ -24,7 +24,7 @@ var validator = (function($){
         number_max      : 'too high',
         url             : 'invalid URL',
         number          : 'not a number',
-        email           : 'email address is invalid',
+        email           : 'FUCK',
         email_repeat    : 'emails do not match',
         password_repeat : 'passwords do not match',
         repeat          : 'no match',
@@ -75,6 +75,11 @@ var validator = (function($){
                 return false;
             }
             return true;
+        },
+        frank : function(a) {
+            console.log('a ---  ' + a);
+            alertTxt = '我是弗兰克';
+            return false;
         },
         // a "skip" will skip some of the tests (needed for keydown validation)
         text : function(a, skip){
